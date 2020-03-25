@@ -10,7 +10,7 @@ h1 {
   font-family: 'Montserrat';
 }
 
-h2{
+h2 {
   color: #83D8C5;
   font-family: 'Montserrat';
   font-size: 18px;
@@ -27,7 +27,7 @@ a {
   margin: 40px auto;
 }
 
-.card-white{
+.card-white {
   background-color: white;
   padding: 40px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
