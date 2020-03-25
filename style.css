@@ -49,12 +49,95 @@ a {
 
 .list-inline li {
   display: inline-block;
+  transform: translateX(0);
+  transition: transform 3s ease-out;
 }
 
+.list-inline li:hover{
+  color: red;
+  background-color: #2be28d;
+  transform: translateX(10px);
+}
+
+.btn-blue {
+  font-size: 20px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.btn-blue:hover {
+  color: black;
+  background-color: #2be28d;
+}
 
 .img-circle {
   border-radius: 50%;
+  border:5px solid #2be28d;
+  transition: transform 2s;
 }
+
+.img-circle:hover {
+  transform: scale(1.5);
+}
+
+#greet {
+  /*transform: translateX(0);
+  transition: transform 10s ease-out;*/
+}
+
+#greet:hover{
+  /*background: #2be28d;
+  color: white;
+  transform: translateX(10px)*/
+  visibility: hidden;
+}
+
+#follow{
+  border-radius: 10px;
+  border: 2px solid #333;
+  display: block;
+  font-family: ubuntu;
+  font-size: 20px;
+  margin: 30px auto;
+  overflow: hidden;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s;
+  width: 170px;
+  color: #2be28d;
+}
+
+#follow:after{
+  content: "";
+  background-color: #333;
+  display: block;
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transition: .3s;
+  width: 0;
+  z-index:-1;
+
+}
+
+#follow:hover{
+  border-color: #2be28d;
+  color: black;
+}
+
+#follow:hover:after {
+  background-color: #333;
+  border-radius: 100px;
+  height: 120%;
+  left: -21px;
+  top: -6px;
+  width: 120%;
+}
+
 
 /* Media Queries */
 
